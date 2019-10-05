@@ -48,16 +48,18 @@ void loop()
         buzzer.setMelody(notes, durations, melodyLength);
         buzzer.turnSoundOn();
     }
+<<<<<<< HEAD
     
     if (buttonMelodyTwo.wasPressed())
     { 
         buzzer.setMelody(notes2, durations2, melodyLength2);
         buzzer.turnSoundOn();
-    }
+=======
 
     if (buttonSpeed.wasPressed())
     {
         currentSpeed = (currentSpeed + 1)%speedsLength;
         buzzer.setNoteDuration(speeds[currentSpeed]);
+>>>>>>> origin/speed_up
     }
 }
